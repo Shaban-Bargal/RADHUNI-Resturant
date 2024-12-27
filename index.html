@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADHUNI</title>
+    <!-- link style file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="img/logo-1.png" type="image/x-icon">
+    <!-- link font famaily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="link rel=" preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- link font famaily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair:ital,opsz,wdth,wght@0,5..1200,112.5,300..900;1,5..1200,112.5,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100">
+        <div class="container-fluid pt-1 pb-1 position-relative">
+            <a class="navbar-brand ms-5 me-5 d-lg-none " href="#">
+                <img class="img-fluid logo-nav2" src="img/logo-1.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">BRANCHES</a>
+                    </li>
+                    <div>
+                        <a class="navbar-brand ms-5 me-5 d-none d-lg-block" href="#">
+                            <img class="img-fluid logo" src="img/logo-1.png" alt="">
+                        </a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">BOOKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start home page -->
+    <div class="home pt-5 pb-5  text-center position-relative">
+        <div class="container pt-5 mt-5">
+            <img src="img/logo-1.png" alt="logo">
+            <h1 class="text-uppercase p-5 text-light m-auto"><span>Fresh And</span> Delicious Food For Your
+                <span>Health</span>
+            </h1>
+            <a class="text-uppercase btn rounded home-btn mt-4 fw-bold" href="Reservation.html" target="_blank">BOOK
+                NOW&nbsp;&nbsp;&nbsp;<span class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+        </div>
+    </div>
+    <!-- end home page -->
+    <!-- start about -->
+    <div class="about pb-5 text-center position-relative align-items-center">
+        <div class="container pt-3 pb-5">
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <div class="img2">
+                        <img class="bg-light p-2" src="img/rotate-image-1.jpg" alt="Photo">
+                    </div>
+                    <div class="img1">
+                        <img class="bg-light p-2 " src="img/rotate-image-2.jpg" alt="Photo">
+                    </div>
+                </div>
+                <div class="col-md-6 pt-4 text-lg-start">
+                    <h5 class="mb-3 pt-4 main-h5">about us</h5>
+                    <h4 class="fw-bold">WE ARE TASTY</h4>
+                    <img src="img/line2.png" alt="">
+                    <p class="text-black-50 mt-4 ">Welcome To RADHUNI, where every dish is an epic journey through
+                        flavors and aromas that tantalize your taste buds. We pride ourselves on using only the freshest
+                        and most sustainable ingredients</p>
+                    <p class="text-black-50">carefully curated from local farmers and artisans. Whether you're craving a
+                        hearty steak, a delicate piece of fish, or a vegetarian delight, our menu offers a range of
+                        options to satisfy every palate. Join us for an extraordinary dining experience, filled with
+                        warmth, creativity, and indulgence</p>
+                    <a class="text-uppercase btn rounded-pill main-btn text-dark mt-4 fw-bold" href="#">read more<span
+                            class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+    <!-- start Special-Recipes -->
+    <div class="recipes pb-5 pt-5 position-relative">
+        <div class="container">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5">Special Recipes</h5>
+                <h4 class="fw-bold text-light">Taste of Precious</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-whitte-50 mt-4 m-auto text-light pb-5">RADHUNI offers an amazing dining
+                    experience! The atmosphere is vibrant, and the food is simply delicious. Highly recommend</p>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="box text-center">
+                        <img class="w-100" src="img/card5.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Beef Lasagne</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">A deep, full taste that feels satisfying and strong, often found in
+                            foods like chocolate</p>
+                        <h5 class="fw-bold salary mb-4">$8.62</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box text-center mb-4">
+                        <img class="w-100" src="img/card2.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Tortellini SkewersHOT DOG</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">A smooth, creamy flavour with a slight sweetness, often found in
+                            pastries or sauces</p>
+                        <h5 class="fw-bold salary mb-4">$9.99</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="box text-center">
+                        <img class="w-100" src="img/card3.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Shaved Brussels Sprouts</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">A subtle, savoury heat that brings to mind the flavour of foods
+                            cooked over an open </p>
+                        <h5 class="fw-bold salary mb-4">$12.20</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="box text-center">
+                        <img class="w-100" src="img/card5.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Roasted Asparagus</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">Firm and makes a sound when bitten, like crisps or fresh carrots</p>
+                        <h5 class="fw-bold salary mb-4">$19.99</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="box text-center">
+                        <img class="w-100" src="img/card4.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Chicken Goujons</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">Airy or delicate, like a mousse or soufflé that’s easy to eat </p>
+                        <h5 class="fw-bold salary mb-4">$7.50</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="box text-center">
+                        <img class="w-100" src="img/card1.jpg" alt="card">
+                        <h6 class="mt-5 fw-bold">Beef Grilled</h6>
+                        <div class="starts">
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            <span><i class="fa-regular fa-star"></i></span>
+                        </div>
+                        <p class="mt-3 m-auto mb-3">Wet and soft in an unpleasant way, often because it has
+                            absorbed too much liquid</p>
+                        <h5 class="fw-bold salary mb-4">$15.99</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Special-Recipes -->
+    <!-- our -services -->
+    <div class="our-services mb-5 mt-5">
+        <div class="container">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5">Our Services</h5>
+                <h4 class="fw-bold">What We Offer</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-black-50 mt-4 m-auto">At RADHUNI, we embark on a culinary journey that tantalizes
+                    your taste buds. Our restaurant is renowned for its diverse menu and top-notch service. Come and
+                    experience our innovative take on traditional and modern dishes</p>
+            </div>
+            <div class="row mt-5 pt-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box text-center position-relative">
+                        <img src="img/food1.jpg" alt="">
+                        <h6 class="text-uppercase fw-bold mt-4 mb-3 z-1 position-relative">Others</h6>
+                        <p>Made from scratch using only the freshest apples from our orchard, our homemade apple pie
+                            brings a taste of home to your table. With a flaky, buttery crust and a
+                            perfectly spiced filling</p>
+                        <a class="text-uppercase btn rounded-pill main-btn mt-4" href="#">learn more<span
+                                class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box text-center position-relative">
+                        <img src="img/food2.jpg" alt="">
+                        <h6 class="text-uppercase fw-bold mt-4 mb-3 z-1 position-relative">Dinner</h6>
+                        <p>Crafted with passion in our family-run bakery, this sourdough bread features a perfect crust
+                            and a soft, chewy center. Made from locally sourced, organic wheat With a flaky</p>
+                        <a class="text-uppercase btn rounded-pill main-btn mt-4" href="#">learn more<span
+                                class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box text-center position-relative">
+                        <img src="img/food3.jpg" alt="">
+                        <h6 class="text-uppercase fw-bold mt-4 mb-3 z-1 position-relative">Lunch</h6>
+                        <p>Our grass-fed beef steak comes from cattle raised on lush, open pastures, ensuring a lean,
+                            flavorful, and nutrient-rich cut. With no added hormones or antibiotics</p>
+                        <a class="text-uppercase btn rounded-pill main-btn mt-4" href="#">learn more<span
+                                class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box text-center position-relative">
+                        <img src="img/food4.jpg" alt="">
+                        <h6 class="text-uppercase fw-bold mt-4 mb-3 z-1 position-relative">Breakfast</h6>
+                        <p>Experience the burst of fresh flavors with our organic heirloom tomatoes, grown without
+                            pesticides on our family farm. Each variety is hand-picked at peak ripeness</p>
+                        <a class="text-uppercase btn rounded-pill main-btn mt-4" href="#">learn more<span
+                                class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -services -->
+    <!-- start menu -->
+    <div class="menu pt-5 mt-5 mb-5 position-relative">
+        <div class="before"> <!-- this extera container for add more before -->
+            <div class="container mt-3 position-relative">
+                <div class="text-center main-head">
+                    <h5 class="mb-3 pt-2 main-h5">Food Item</h5>
+                    <h4 class="fw-bold">Our Menu</h4>
+                    <img src="img/line2.png" alt="">
+                    <p class="text-black-50 mt-4 m-auto">Discover the exquisite flavors and culinary creations at Odos
+                        Frontier. From savory dishes to delightful desserts, join us on a gastronomic adventure. Taste
+                        the
+                        fusion of traditional and modern cuisine right at our table</p>
+                    <div class="text-center mt-5 pt-5">
+                        <a class="text-uppercase btn rounded-pill main-btn text-dark" target="_blank"
+                            href="menu.html">View
+                            full menu<span class="ms-2">&nbsp; &nbsp; &nbsp; &nbsp;<i
+                                    class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="row mt-5 pt-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                Lunch
+                            </h6>
+                            <p class="item-name fw-bold text-black-50">Sesame-Ginger Beef</p>
+                            <h6 class="price fw-bold">$13.00</h6>
+                            <p class="item-name fw-bold text-black-50">Mozzarella Sticks</p>
+                            <h6 class="price fw-bold">$19.99</h6>
+                            <p class="item-name fw-bold text-black-50">Broccoli</p>
+                            <h6 class="price fw-bold">$20.00</h6>
+                            <p class="item-name fw-bold text-black-50">Crispy Fried Chicken</p>
+                            <h6 class="price fw-bold">$13.99</h6>
+                            <p class="item-name fw-bold text-black-50">Wild Mushroom Arancini</p>
+                            <h6 class="price fw-bold">$12.50</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                DRINKS
+                            </h6>
+                            <p class="item-name fw-bold text-black-50">Cofee</p>
+                            <h6 class="price fw-bold">$2.99</h6>
+                            <p class="item-name fw-bold text-black-50">Soft Drinks</p>
+                            <h6 class="price fw-bold">$6.00</h6>
+                            <p class="item-name fw-bold text-black-50">Green Juice</p>
+                            <h6 class="price fw-bold">$3.99</h6>
+                            <p class="item-name fw-bold text-black-50">Pineapple Juice</p>
+                            <h6 class="price fw-bold">$5.50</h6>
+                            <p class="item-name fw-bold text-black-50">Wild Cherry</p>
+                            <h6 class="price fw-bold">$3.99</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                Pizza
+                            </h6>
+                            <p class="item-name fw-bold text-black-50">Tortellini Skewers</p>
+                            <h6 class="price fw-bold">$17.99</h6>
+                            <p class="item-name fw-bold text-black-50">Fried Ravioli</p>
+                            <h6 class="price fw-bold">$18.99</h6>
+                            <p class="item-name fw-bold text-black-50">Chicken Goujons</p>
+                            <h6 class="price fw-bold">$20.00</h6>
+                            <p class="item-name fw-bold text-black-50">Beef Lasagne</p>
+                            <h6 class="price fw-bold">$13.99</h6>
+                            <p class="item-name fw-bold text-black-50">Beef Lasagne</p>
+                            <h6 class="price fw-bold">$33.50</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                Dinner
+                            </h6>
+                            <p class="item-name fw-bold text-black-50">Chicken Burger</p>
+                            <h6 class="price fw-bold">$19.99</h6>
+                            <p class="item-name fw-bold text-black-50">Beef Lasagne</p>
+                            <h6 class="price fw-bold">$11.99</h6>
+                            <p class="item-name fw-bold text-black-50">Chicken Goujons</p>
+                            <h6 class="price fw-bold">$13.50</h6>
+                            <p class="item-name fw-bold text-black-50">Tortellini Skewers</p>
+                            <h6 class="price fw-bold">$10.99</h6>
+                            <p class="item-name fw-bold text-black-50">Fried Ravioli</p>
+                            <h6 class="price fw-bold">$21.50</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                SOUP
+                            </h6>
+                            <p class="item-name fw-bold text-black-50">jade soup</p>
+                            <h6 class="price fw-bold">$14.99</h6>
+                            <p class="item-name fw-bold text-black-50">okroshka</p>
+                            <h6 class="price fw-bold">$13.99</h6>
+                            <p class="item-name fw-bold text-black-50">holodnik</p>
+                            <h6 class="price fw-bold">$20.00</h6>
+                            <p class="item-name fw-bold text-black-50">salmorejo</p>
+                            <h6 class="price fw-bold">$14.99</h6>
+                            <p class="item-name fw-bold text-black-50">vichyssoise</p>
+                            <h6 class="price fw-bold">$12.00</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="box text-center position-relative">
+                            <h6 class="fw-bold title"><span class=""><i class="fa-solid fa-diamond fs-6"></i></span>
+                                Breakfast</h6>
+                            <p class="item-name fw-bold text-black-50">Roasted Asparagus</p>
+                            <h6 class="price fw-bold">$15.99</h6>
+                            <p class="item-name fw-bold text-black-50">Coleslaw</p>
+                            <h6 class="price fw-bold">$14.99</h6>
+                            <p class="item-name fw-bold text-black-50">Mashed Potatoes</p>
+                            <h6 class="price fw-bold">$12.00</h6>
+                            <p class="item-name fw-bold text-black-50">Southern-Style Potato</p>
+                            <h6 class="price fw-bold">$9.99</h6>
+                            <p class="item-name fw-bold text-black-50">Shaved Brussels Sprouts</p>
+                            <h6 class="price fw-bold">$10.50</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end menu -->
+    <!-- start our-team -->
+    <div class="our-team text-center mt-5 mb-5">
+        <div class="container">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5">Our Team</h5>
+                <h4 class="fw-bold">Meet Our Staff</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-black-50 mt-4 m-auto">At RADHUNI, we are committed to bringing you a unique and
+                    delightful dining experience. Our chef's unique approach to mixing traditional techniques with
+                    innovative flavors guarantees a feast for your senses</p>
+            </div>
+            <div class="row mt-5 pt-5 ps-3 pe-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box position-relative p-4">
+                        <img src="img/sheif1.jpg" alt="Photo">
+                        <h6 class="fw-bold text-center mt-5">Masum Rana</h6>
+                        <div class="icons mt-5">
+                            <span><a href="#"><i
+                                        class="fa-brands fa-facebook fs-6 p-2 me-2 rounded-circle facebook text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-twitter fs-6 p-2 me-2 rounded-circle twitter text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-linkedin fs-6 p-2 me-2 rounded-circle linkedin text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-solid fa-envelope fs-6 p-2 me-2 rounded-circle envelope text-light"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box position-relative p-4">
+                        <img src="img/sheif2.jpg" alt="Photo">
+                        <h6 class="fw-bold text-center mt-5">Muhibbur Rashid
+                        </h6>
+                        <div class="icons mt-5">
+                            <span><a href="#"><i
+                                        class="fa-brands fa-facebook fs-6 p-2 me-2 rounded-circle facebook text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-twitter fs-6 p-2 me-2 rounded-circle twitter text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-linkedin fs-6 p-2 me-2 rounded-circle linkedin text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-solid fa-envelope fs-6 p-2 me-2 rounded-circle envelope text-light"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box position-relative p-4">
+                        <img src="img/sheif3.jpg" alt="Photo">
+                        <h6 class="fw-bold text-center mt-5">Jannatul Ferdous
+                        </h6>
+                        <div class="icons mt-5">
+                            <span><a href="#"><i
+                                        class="fa-brands fa-facebook fs-6 p-2 me-2 rounded-circle facebook text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-twitter fs-6 p-2 me-2 rounded-circle twitter text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-linkedin fs-6 p-2 me-2 rounded-circle linkedin text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-solid fa-envelope fs-6 p-2 me-2 rounded-circle envelope text-light"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box position-relative p-4">
+                        <img src="img/sheif4.jpg" alt="Photo">
+                        <h6 class="fw-bold text-center mt-5">Rashed Kabir
+                        </h6>
+                        <div class="icons mt-5">
+                            <span><a href="#"><i
+                                        class="fa-brands fa-facebook fs-6 p-2 me-2 rounded-circle facebook text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-twitter fs-6 p-2 me-2 rounded-circle twitter text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-brands fa-linkedin fs-6 p-2 me-2 rounded-circle linkedin text-light"></i></a></span>
+                            <span><a href="#"><i
+                                        class="fa-solid fa-envelope fs-6 p-2 me-2 rounded-circle envelope text-light"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our-team -->
+    <!--start reserviton -->
+    <div class="reserviton mt-5 pt-5 pb-5 position-relative">
+        <div class="container mt-3 pt-5 mb-3 pb-5 position-relative z-1">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5 fs-2">booking</h5>
+                <h4 class="fw-bold mb-2 fs-2">MAKE A RESERVATION</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-white-50 mt-4 m-auto">You can make a reservation by calling us directly or through our
+                    website's reservation form, which is available 24/7</p>
+                <p class="text-white-50  mt-5 m-auto">You can cancel a reservation up to 24 hours in advance without any
+                    charge. Cancellations within 24 hours may incur a fee</p>
+                <p class="text-white-50  mt-5 m-auto">Yes, during peak hours you may be added to a waitlist. Our staff
+                    will notify you when your table is ready</p>
+                <p class="text-white-50  mt-5 m-auto">Yes, you can modify your reservation details by contacting us via
+                    phone or making changes through our website</p>
+                <a class="text-uppercase btn rounded-pill main-btn text-dark mt-5 fw-bold" href="Reservation.html"
+                    target="_blank">book
+                    now &nbsp;&nbsp;&nbsp;<span class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+    <!--end reserviton -->
+    <!-- start our-news -->
+    <div class="our-news pb-5 pt-5 ps-2 pe-2">
+        <div class="container">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5">Our News</h5>
+                <h4 class="fw-bold mb-3 text-light">Latest News</h4>
+                <img class="mb-5" src="img/line2.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-4">
+                        <div class="text-center mt-3">
+                            <img class="w-75" src="img/our-news1.png" alt="photo">
+                        </div>
+                        <div class="text">
+                            <p class="text-black-50 date ps-3 pt-4">Posted July 05, 2024</p>
+                            <h5 class="text-uppercase ps-3 fw-bold">Mozzarella Sticks</h5>
+                            <p class="text-black-50 description ps-3 pt-2 pb-4">You will vainly look for fruit on it in
+                                autumn.</p>
+                        </div>
+                        <div class="div-btn p-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-4">
+                        <div class="text-center mt-3">
+                            <img class="w-75" src="img/our-news2.png" alt="photo">
+                        </div>
+                        <div class="text">
+                            <p class="text-black-50 date ps-3 pt-4">Posted July 06, 2024</p>
+                            <h5 class="text-uppercase ps-3 fw-bold">Sesame-Ginger Beef</h5>
+                            <p class="text-black-50 description ps-3 pt-2 pb-4">A man's worth has its season, like
+                                tomato mattis nunc.</p>
+                        </div>
+                        <div class="div-btn p-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-4">
+                        <div class="text-center mt-3">
+                            <img class="w-75" src="img/our-news3.png" alt="photo">
+                        </div>
+                        <div class="text">
+                            <p class="text-black-50 date ps-3 pt-4">Posted July 07, 2024</p>
+                            <h5 class="text-uppercase ps-3 fw-bold">Beef Lasagne</h5>
+                            <p class="text-black-50 description ps-3 pt-2 pb-4">Good thoughts bear good fresh juicy
+                                fruit egestas viverra eros.</p>
+                        </div>
+                        <div class="div-btn p-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-4">
+                        <div class="text-center mt-3">
+                            <img class="w-75" src="img/our-news4.png" alt="photo">
+                        </div>
+                        <div class="text">
+                            <p class="text-black-50 date ps-3 pt-4">Posted July 09, 2024</p>
+                            <h5 class="text-uppercase ps-3 fw-bold">Shaved Brussels Sprouts</h5>
+                            <p class="text-black-50 description ps-3 pt-2 pb-4">Vivamus lacus enim, pulvinar vel nulla
+                                sed, scelerisque rhoncus nisi.</p>
+                        </div>
+                        <div class="div-btn p-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center main-head pt-5">
+                    <h5 class="mb-3 pt-2 main-h5">more ...</h5>
+                    <h5 class="fw-bold mb-5 text-uppercase text-light">to show more about our news</h5>
+                    <a class="text-uppercase btn rounded-pill last-btn text-dark mt-5 fw-bold" href="our-news.html"
+                        target="_blank">show more <span class="ms-2"><i class="icon fa fa-angle-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our-news -->
+    <!-- start contact -->
+    <div class="contact pt-5 pb-5 position-relative">
+        <div class="container pt-5 mb-3 pb-5 z-1 position-relative">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5 fs-2">Contact Us</h5>
+                <h4 class="fw-bold mb-2 fs-2">Get in Touch</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-white-50 mt-4 m-auto">Absolutely, we welcome large groups. Please contact us in advance
+                    to make special arrangements for parties of 10 or more</p>
+                <a class="text-uppercase btn rounded-pill main-btn text-dark mt-5 fw-bold" href="contact.html"
+                    target="_blank">contact now&nbsp;&nbsp;&nbsp;<span class="ms-2"><i
+                            class="icon fa fa-angle-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <!-- start our-branches -->
+    <div class="our-branches pt-5 pb-5 text-center">
+        <div class="container">
+            <div class="main-head">
+                <h5 class="mb-3 pt-2 main-h5">Our Branches</h5>
+                <h4 class="fw-bold mb-2">Where we are?</h4>
+                <img src="img/line2.png" alt="">
+            </div>
+            <div class="row mt-5 pt-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-3">
+                        <h5 class="fw-bold text-uppercase"><span><i class="fa-solid fa-location-dot"></i></span> &nbsp;
+                            Los Angeles</h5>
+                        <p class="text-black-50 mt-4 fw-bold">Angel Street 146, B16</p>
+                        <p class="text-black-50 fw-bold">(058) 569 3668</p>
+                        <p class="text-black-50 fw-bold">la@italianradhuni.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.1213476063463!2d-79.57873718602217!3d43.56235449660708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b466ab994f633%3A0x4cb994cbf20abd80!2zMTQ2IEFuZ2VsZW5lIFN0LCBNaXNzaXNzYXVnYSwgT04gTDVHIDFYMtiMINmD2YbYr9in!5e0!3m2!1sar!2seg!4v1734108142281!5m2!1sar!2seg"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-3">
+                        <h5 class="fw-bold text-uppercase"><span><i class="fa-solid fa-location-dot"></i></span> &nbsp;
+                            New York</h5>
+                        <p class="text-black-50 mt-4 fw-bold">West 36th Street, East Building</p>
+                        <p class="text-black-50 fw-bold">(089) 256 36598</p>
+                        <p class="text-black-50 fw-bold">ny@italianradhuni.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.59848366164!2d-73.95956148715821!3d40.74773469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259068d936d03%3A0xa8ca61274686ce9f!2s137%20East%2036%20Street%20Corporation!5e0!3m2!1sar!2seg!4v1734108305983!5m2!1sar!2seg"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-3">
+                        <h5 class="fw-bold text-uppercase"><span><i class="fa-solid fa-location-dot"></i></span> &nbsp;
+                            Chicago</h5>
+                        <p class="text-black-50 mt-4 fw-bold">2351 N Lincoln Ave Suite A1-120</p>
+                        <p class="text-black-50 fw-bold">(058) 569 3668</p>
+                        <p class="text-black-50 fw-bold">ch@italianradhuni.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.5186526933444!2d-87.64489207594688!3d41.92470527123665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd310108a4d4d%3A0xa80f11c4dc7bb764!2zMjM1MSBOIExpbmNvbG4gQXZlIFN1aXRlIEExLTEyMCwgQ2hpY2FnbywgSUwgNjA2MTTYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1734108360197!5m2!1sar!2seg"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box mb-5">
+                        <h5 class="fw-bold text-uppercase"><span><i class="fa-solid fa-location-dot"></i></span> &nbsp;
+                            Las Vegas</h5>
+                        <p class="text-black-50 mt-4 fw-bold">939 N Orleans St</p>
+                        <p class="text-black-50 fw-bold">(058) 569 3668</p>
+                        <p class="text-black-50 fw-bold">lv@italianradhuni.com</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6654913878847!2d-87.63447477594559!3d41.90005057123925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34a222416dd%3A0x4f596c7579c7e65b!2zOTM5IE4gT3JsZWFucyBTdCwgQ2hpY2FnbywgSUwgNjA2MTDYjCDYp9mE2YjZhNin2YrYp9iqINin2YTZhdiq2K3Yr9ip!5e0!3m2!1sar!2seg!4v1734108397747!5m2!1sar!2seg"
+                            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end our-branches -->
+    <!-- start offers -->
+    <div class="offers mb-5 pt-5 pb-5  position-relative">
+        <div class="container mt-3 pt-5 mb-3 pb-5">
+            <div class="text-center main-head">
+                <h5 class="mb-3 pt-2 main-h5">Special Offers</h5>
+                <h4 class="fw-bold mb-2 text-light">EXPLORE OUR OFFERS</h4>
+                <img src="img/line2.png" alt="">
+                <p class="text-light mt-4 m-auto mb-4">At RADHUNI, we commit to offering a dining experience that
+                    transcends the ordinary. Our chefs use only the finest ingredients, meticulously prepared to bring
+                    out the rich flavors in every dish</p>
+                <a class="text-uppercase btn rounded-pill main-btn text-dark mt-5 fw-bold" href="Our-Offers.html"
+                    target="_blank">show offers &nbsp;&nbsp;&nbsp;<span class="ms-2"><i
+                            class="icon fa fa-angle-right"></i></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- end offers -->
+    <!-- start clint -->
+    <div class="clint pt-4 pb-5 text-center position-relative">
+        <div class="container">
+            <div class="main-head">
+                <h5 class="mb-3 pt-2 main-h5">Testimonials</h5>
+                <h4 class="fw-bold mb-2">WHAT OUR FANTASTIC CLIENTS SAY</h4>
+                <img src="img/line2.png" alt="">
+            </div>
+            <div class="row mt-5 pt-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="box pt-4 pb-4 bg-light">
+                        <img class="rounded-circle" src="img/clint1.jpg" alt="">
+                        <p class="m-auto mt-5 position-relative">Comb the business’s social media pages for customer
+                            comments or use a social listening tool to monito.</p>
+                        <h6 class="fw-bold mt-4">John Smith</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box pt-4 pb-4 bg-light">
+                        <img class="rounded-circle" src="img/clint2.jpg" alt="">
+                        <p class="m-auto mt-5 position-relative">business privately, such as during a meeting or phone
+                            call, might be open to publicizing their comments.</p>
+                        <h6 class="fw-bold mt-4">John Smith</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="box pt-4 pb-4 bg-light">
+                        <img class="rounded-circle" src="img/clint3.jpg" alt="">
+                        <p class="m-auto mt-5 position-relative">Fabricating testimonials is illegal, and most consumers
+                            are savvy enough to identify made-up reviews.</p>
+                        <h6 class="fw-bold mt-4">John Smith</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end clint -->
+    <!-- start footer -->
+    <div class="footer text-center pt-5 pb-5 text-light position-relative">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-4 text-start">
+                    <h4>About Meal</h4>
+                    <p class=" text-white-50">The Big Oxmox advised her not to do so, because there were
+                        thousands of bad Commas, wild Question
+                        Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p>
+                    <div class="mb-4">
+                        <a class="text-uppercase btn rounded btn-footer mt-5 fw-bold" href="#">read more<span
+                                class="ms-2">&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 text-start">
+                    <h4 class="mb-3">Lunch Service</h4>
+                    <p class=" text-white-50">Booking from 12:00pm — 1:30pm</p>
+                    <h4 class="pt-3 mb-3">Dinner Service</h4>
+                    <p class=" text-white-50">Everyday : <br>
+                        Booking from 6:00pm — 9:00pm</p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-start">
+                    <h5 class="mt-4 fw-bold">Follow Us</h5>
+                    <div class="icons mt-3">
+                        <span><a href="#"><i
+                                    class="fa-brands fa-facebook fs-6 p-2 me-2 rounded-circle facebook text-light"></i></a></span>
+                        <span><a href="#"><i
+                                    class="fa-brands fa-twitter fs-6 p-2 me-2 rounded-circle twitter text-light"></i></a></span>
+                        <span><a href="#"><i
+                                    class="fa-brands fa-youtube fs-6 p-2 me-2 rounded-circle youtube text-light"></i></a></span>
+                        <span><a href="#"><i
+                                    class="fa-brands fa-instagram fs-6 p-2 me-2 rounded-circle instagram text-light"></i></a></span>
+                    </div>
+                    <h5 class="mt-5 fw-bold">Address</h5>
+                    <h6 class="text-white-50">West 36th Street</h6>
+                    <h6 class="text-white-50">Lincoln Ave Suite A1-120</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

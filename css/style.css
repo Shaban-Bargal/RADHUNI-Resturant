@@ -1,0 +1,959 @@
+/* 
+font-family: "Merriweather", serif;
+font-family: "Pacifico", serif;
+'Playfair Display', serif
+ */
+
+/* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , 0.4); 
+*/
+
+/* 
+    /* content: "";
+    position: absolute;
+    width: 32%;
+    height: 2px;
+    bottom: 368px;
+    background-color: black;
+    left: 50%;
+    transform: translatex(-50%); */
+
+
+:root {
+    --red-color: #ea625c;
+    --stars-color: #c44118;
+    --brown-color: #fffae4;
+    /*bg menu color*/
+    --border-color: #00000080;
+}
+
+* {
+    font-family: "Fira Sans", serif;
+    font-weight: 600;
+}
+
+/* start nav */
+.navbar {
+    background-color: rgb(0, 0, 0, 0.02) !important;
+    z-index: 10;
+}
+
+.navbar .logo {
+    width: 175px !important;
+}
+
+.navbar .logo-nav2 {
+    width: 110px !important;
+    margin-left: -30px;
+}
+
+.navbar ul li a {
+    margin: 8px 9px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+.navbar .container-fluid {
+    margin-top: -10px;
+    background-color: #ffffff;
+}
+
+.navbar ul li a:hover {
+    color: var(--red-color) !important;
+    border-bottom: 1px solid var(--red-color);
+    padding-top: 20px !important;
+}
+
+.navbar .navbar-toggler {
+    border: 1px solid white;
+    color: black;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .container-fluid::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -18px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+
+/* end nav */
+/* start home page */
+.home {
+    background-image: url(../img/home1.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.home .container {
+    position: relative;
+    z-index: 1;
+}
+
+.home .home-btn {
+    padding: 10px 18px;
+    border: 2px solid #cda45e;
+    color: #cda45e;
+    font-family: "Merriweather", serif;
+
+}
+
+.home .home-btn:hover {
+    background-color: var(--red-color) !important;
+}
+
+.home h1 {
+    font-size: 36px;
+    max-width: 700px;
+    font-family: "Merriweather", serif;
+}
+
+.home h1 span {
+    color: #cda45e;
+}
+
+
+/* end home page */
+/* start about */
+.about .img2 img {
+    width: 300px;
+    rotate: 8deg;
+    margin-bottom: -300px;
+}
+
+.about .img1 img {
+    width: 300px;
+    rotate: -8deg;
+}
+
+.about .main-btn {
+    border: 2px solid var(--red-color);
+    font-size: 15px;
+    padding: 7px 14px;
+}
+
+.about .main-btn:hover {
+    background-color: var(--red-color);
+}
+
+.main-h5 {
+    font-family: "Pacifico", serif;
+    color: var(--red-color);
+    font-size: 22px;
+}
+
+.about {
+    overflow: hidden;
+}
+
+.about .box {
+    padding: 0px 15px;
+}
+
+/* end about */
+/* Special-Recipes */
+.recipes .box {
+    background-color: rgba(255, 255, 255, 0.544);
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+}
+
+.main-head p {
+    max-width: 600px;
+}
+
+.recipes {
+    overflow: hidden;
+}
+
+.recipes .container::before {
+    content: '';
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.recipes .box .salary {
+    color: var(--red-color);
+}
+
+.recipes .box .starts {
+    color: #f7874f;
+}
+
+.recipes .box p {
+    max-width: 330px;
+}
+
+.recipes .box img {
+    transition: .5s;
+}
+
+.recipes .box {
+    overflow: hidden;
+}
+
+.recipes .box img:hover {
+    scale: 1.1;
+}
+
+.recipes::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+.recipes::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 18px;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+/* end-Recipes */
+/* start our-services */
+.our-services .box h6 {
+    color: var(--red-color);
+}
+
+.our-services .box img {
+    transition: .5s;
+}
+
+.our-services .box img:hover {
+    rotate: 50deg;
+    scale: 1.1;
+    opacity: .6;
+}
+
+.our-services .box p::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    background-color: black;
+}
+
+.our-services .main-btn {
+    color: var(--red-color);
+    padding: 10px 18px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.our-services .main-btn:hover {
+    color: var(--red-color);
+}
+
+.our-services {
+    overflow-x: hidden;
+}
+
+/* end our-services */
+/* start menu */
+.menu {
+    background-color: #fffae4;
+}
+
+.menu .box .title {
+    font-family: "Pacifico", serif
+}
+
+.menu .box .title,
+.menu .box .price {
+    color: var(--red-color);
+}
+
+.menu .box::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 1px;
+    background-color: black;
+    top: 370px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.menu .main-btn {
+    background-color: var(--red-color) !important;
+    font-size: 15px;
+    padding: 8px 18px !important;
+
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: calc(100% + 112px);
+    left: 50%;
+    opacity: .4;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/simple.png);
+    background-repeat: no-repeat;
+}
+
+.menu .before::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+.menu::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 18px;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+
+.menu {
+    overflow: hidden;
+}
+
+/* end menu */
+/* start our-tram */
+.our-team .box h6::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    left: 50%;
+    bottom: 85px;
+    transform: translate(-50%);
+    background-color: black;
+}
+
+.our-team .box .icons .facebook {
+    background-color: #1877f2;
+}
+
+.our-team .box .icons .twitter {
+    background-color: #000000;
+}
+
+.our-team .box .icons .linkedin {
+    background-color: #0a66c2;
+}
+
+.our-team .box .icons .envelope {
+    background-color: #ec2c22;
+}
+
+.our-team .box {
+    transition: .3s;
+    border-radius: 20px;
+
+}
+
+.our-team .box {
+    border: 2px solid white;
+}
+
+.our-team .box:hover {
+    scale: 1.1;
+}
+
+/* end our-tram */
+/* start reserviton */
+.reserviton {
+    background-image: url(../img/home3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.reserviton .main-btn {
+    background-color: var(--red-color) !important;
+    font-size: 15px;
+    padding: 9px 18px;
+}
+
+.reserviton .main-btn:hover {
+    background-color: var(--red-color);
+    outline: none;
+}
+
+.reserviton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.reserviton::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+/* end reserviton */
+/* start our-news */
+.our-news {
+    background-image: url(../img/bg4.jpg);
+}
+
+.our-news .text .date {
+    font-family: "Pacifico", serif;
+}
+
+.our-news .text .description {
+    max-width: 350px;
+    font-size: 15px;
+}
+
+.our-news .box {
+    border-radius: 20px;
+}
+
+.our-news .box img {
+    transition: .5s;
+}
+
+.our-news .box {
+    overflow: hidden;
+}
+
+.our-news .box {
+    transition: .3s;
+}
+
+.our-news .box:hover img {
+    rotate: 10deg;
+    scale: 1.1;
+}
+
+.our-news .box:hover {
+    scale: 1.04;
+}
+
+.our-news .box {
+    background-color: rgba(255, 255, 255, 0.626);
+}
+
+.our-news .box .main-btn {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--red-color) !important;
+}
+
+.our-news .last-btn {
+    border: 2px solid var(--red-color);
+    font-size: 15px;
+    padding: 7px 14px;
+}
+
+.our-news .last-btn:hover {
+    background-color: var(--red-color);
+    outline: none;
+}
+
+.our-news .last-btn {
+    background-color: var(--red-color) !important;
+    font-size: 15px;
+    padding: 9px 18px;
+}
+
+.our-news .last-btn:hover {
+    background-color: var(--red-color);
+    outline: none;
+}
+
+/* end our-news */
+.contact {
+    background-image: url(../img/home3.jpg);
+    overflow: hidden;
+}
+
+.contact .main-btn {
+    background-color: var(--red-color) !important;
+    font-size: 15px;
+    padding: 9px 18px;
+}
+
+.contact .main-btn:hover {
+    background-color: var(--red-color);
+    outline: none;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 18px;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+/* end contact */
+/* start our-branches */
+.our-branches .box svg {
+    color: #D12B19;
+    font-size: 35px;
+    /* font-family: "Pacifico", serif */
+}
+
+.our-branches .box h5 {
+    font-family: "Roboto Slab", serif;
+}
+
+.our-branches .box p {
+    font-size: 15px;
+}
+
+/* end our-branches */
+/* start offers */
+
+.offers {
+    background-image: url(../img/bg8.jpg);
+    overflow: hidden;
+}
+
+.offers .main-btn {
+    background-color: var(--red-color) !important;
+    font-size: 15px;
+    padding: 9px 18px;
+}
+
+.offers .main-btn:hover {
+    background-color: var(--red-color);
+    outline: none;
+}
+
+.offers::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+.offers::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 18px;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+/* end offers */
+/* start clint */
+.clint::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/bg-card.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.clint .box p::before {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    left: 50%;
+    bottom: 93px;
+    transform: translate(-50%);
+    background-color: black;
+}
+
+.clint .box p {
+    max-width: 320px;
+}
+
+/* end clint */
+/* start footer */
+.footer {
+    background-color: #121212;
+}
+
+.footer .icons .facebook {
+    background-color: #1877f2;
+}
+
+.footer .icons .twitter {
+    background-color: #000000;
+}
+
+.footer .icons .youtube {
+    background-color: #ff0000;
+}
+
+.footer .icons .instagram {
+    background-color: #0d1a2b;
+}
+
+.footer input:focus {
+    outline: none;
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    rotate: 180deg;
+    background-repeat: no-repeat;
+    background: url(../img/line4.webp);
+}
+
+.btn-footer {
+    border: 2px solid var(--red-color) !important;
+    color: var(--red-color) !important;
+}
+
+/* end footer */
+/* ===================================  start page our-news ==================================== */
+.body-our-news {
+    background-image: url(../img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-our-news {
+    font-family: "Fira Sans", serif;
+}
+
+.page-our-news .text .date {
+    font-family: "Pacifico", serif;
+}
+
+.page-our-news .text .description {
+    max-width: 350px;
+    font-size: 15px;
+}
+
+.page-our-news .box {
+    border-radius: 20px;
+}
+
+.page-our-news .box img {
+    transition: .5s;
+}
+
+.page-our-news .box {
+    background-color: rgba(255, 255, 255, 0.626) !important;
+}
+
+.page-our-news .box {
+    overflow: hidden;
+}
+
+.page-our-news .box {
+    transition: .3s;
+}
+
+.page-our-news .box:hover img {
+    rotate: 10deg;
+    scale: 1.1;
+}
+
+.page-our-news .box:hover {
+    border: solid 1px #19283f;
+    scale: 1.04;
+}
+
+.page-our-news .box {
+    background-color: white;
+}
+
+/* ===================================  end page our-news =================================== */
+/* ===================================  start page menu ==================================== */
+.page-menu {
+    background-color: var(--brown-color);
+    font-family: "Fira Sans", serif;
+}
+
+.page-menu .box h5,
+.page-menu .box p {
+    margin-left: -40px;
+}
+
+.page-menu .box h5 {
+    color: var(--red-color);
+}
+
+.page-menu .box h6 {
+    color: var(--red-color);
+    font-family: "Pacifico", serif;
+}
+
+.page-menu .box h6::before {
+    content: '';
+    position: absolute;
+    background-color: var(--red-color);
+    left: 50%;
+    transform: translate(-50%);
+    width: 60px;
+    height: 2px;
+    top: 40px;
+}
+
+/* ===================================  end page menu ==================================== */
+/* ===================================  start page Reserviton ============================ */
+.body-reservation {
+    padding-bottom: 1px;
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-reservation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.reservation-page {
+    font-family: "Fira Sans", serif;
+}
+
+.reservation-page .form input {
+    width: 90%;
+}
+
+
+.reservation-page .logo img {
+    width: 100px !important;
+}
+
+.reservation-page .times h5,
+.reservation-page .form h4,
+.reservation-page .info h4 {
+    color: var(--red-color);
+    font-family: "Pacifico", serif
+}
+
+.reservation-page .times p {
+    font-family: "Pacifico", serif
+}
+
+.reservation-page .form label {
+    font-size: 15px;
+    color: white;
+}
+
+.reservation-page input[type="submit"] {
+    border: 2px solid var(--red-color);
+    background-color: var(--red-color);
+    color: white;
+}
+
+/* ===================================  end page Reserviton ============================== */
+/* ===================================  start page contact ============================== */
+.body-contact {
+    padding-bottom: 188px;
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-contact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.contact-page {
+    font-family: "Fira Sans", serif;
+}
+
+
+.contact-page .logo img {
+    width: 100px !important;
+}
+
+.contact-page .form input {
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: white;
+}
+
+.contact-page .form input[type="submit"] {
+    color: white;
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+}
+
+.contact-page h3 {
+    color: var(--red-color);
+}
+
+.contact-page .section1 h5 {
+    color: var(--red-color);
+    font-family: "Pacifico", serif
+}
+
+.contact-page .section1 h5 span {
+    color: white;
+}
+
+/* ===================================  end page contact ============================== */
+/* ===================================  start page page our offers ============================== */
+.page-our-offers {
+    font-family: "Fira Sans", serif;
+}
+
+.body-our-offers {
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-our-offers .box img {
+    transition: .5s;
+}
+
+.page-our-offers .box {
+    overflow: hidden;
+}
+
+.page-our-offers .box {
+    transition: .3s;
+}
+
+.page-our-offers .box {
+    border-radius: 20px;
+}
+
+.page-our-offers .box:hover img {
+    rotate: 10deg;
+    scale: 1.1;
+}
+
+.page-our-offers .box:hover {
+    border: solid 1px #19283f;
+    scale: 1.04;
+}
+
+.page-our-offers .box {
+    background-color: white;
+}
+
+.page-our-offers h6 span {
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.page-our-offers .text .starts {
+    color: var(--stars-color);
+}
+
+.page-our-offers .text .trending {
+    color: #1c610e;
+    font-size: 14px;
+}
+
+.page-our-offers .text .expire {
+    color: var(--red-color);
+    font-weight: 100;
+}
+
+
+/* ===================================  end page page our offers ============================== */
